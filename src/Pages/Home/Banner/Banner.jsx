@@ -71,7 +71,7 @@ const Banner = () => {
         ))}
       </Swiper>
 
-      <div className="swiper-button-prev-custom absolute top-1/2 left-0 md:left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-lime-400 hover:bg-lime-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
+      <div className="swiper-button-prev-custom absolute top-1/2 left-0 md:left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#B0DD1D] hover:bg-lime-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
         <IoArrowBack size={24} />
       </div>
       <div className="swiper-button-next-custom absolute top-1/2 right-0 md:right-2 transform -translate-y-1/2 z-10 cursor-pointer bg-lime-400 hover:bg-lime-500 text-white rounded-full w-12 h-12 flex items-center justify-center">

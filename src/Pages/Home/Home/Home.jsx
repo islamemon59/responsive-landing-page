@@ -1,3 +1,4 @@
+import AgricultureProduct from "../AgricultureProduct/AgricultureProduct";
 import Banner from "../Banner/Banner";
 import Navbar from "../Navbar/Navbar";
 
@@ -9,6 +10,9 @@ const Home = () => {
             </section>
             <section>
                 <Banner/>
+            </section>
+            <section>
+                <AgricultureProduct/>
             </section>
         </div>
     );
