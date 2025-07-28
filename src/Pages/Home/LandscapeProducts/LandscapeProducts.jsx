@@ -1,42 +1,33 @@
-// src/components/AgriculturalProducts.jsx
-
-import React from "react"; // No need for useRef or useEffect here
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
-// Import Swiper modules
 import { Navigation } from "swiper/modules";
-
-// Import React Icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const products = [
   {
     id: 1,
-    name: "JF Barbed Wire– 270 GSM",
+    name: "Antiqo Fence",
     price: "₹4,995.00",
-    image: "https://i.ibb.co/VWG5H1zT/image.png",
+    image: "https://i.ibb.co/VcRkPbxp/image-4.png",
   },
   {
     id: 2,
-    name: "FGC RustFree Fencing Poles",
+    name: "JF Australian Trellis",
     price: "₹499.00 – ₹1,589.00",
-    image: "https://i.ibb.co/szN6J1Q/image-1.png",
+    image: "https://i.ibb.co/8L6M1Ckk/image-5.png",
   },
   {
     id: 3,
-    name: "GI Poultry Mesh",
+    name: "JF Polyhex Mesh",
     price: "₹1,260.00 – ₹10,750.00",
-    image: "https://i.ibb.co/Sw8rPChV/image-2.png",
+    image: "https://i.ibb.co/k2Yqr5vK/image-6.png",
   },
   {
     id: 4,
-    name: "JF Bluelink Mesh",
+    name: "JF Privezy Grass Wall",
     price: "₹3,087.50 – ₹6,362.50",
-    image: "https://i.ibb.co/PZQ8rgjf/image-3.png",
+    image: "https://i.ibb.co/Rk8LJV45/image-7.png",
   },
   {
     id: 5,
@@ -53,11 +44,11 @@ const products = [
   },
 ];
 
-const AgricultureProduct = () => {
+const LandscapeProducts = () => {
   return (
     <section className="max-w-7xl mx-auto py-8 px-4 relative">
       <h2 className="text-[42px] font-medium mb-8 text-gray-800">
-        Agricultural Products
+        Landscape Products
       </h2>
       <Swiper
         modules={[Navigation]}
@@ -66,10 +57,10 @@ const AgricultureProduct = () => {
         loop={true}
         // ****** KEY CHANGE HERE: Use CSS selectors for navigation elements ******
         navigation={{
-          prevEl: '.swiper-button-prev-custom', // Class of your prev button
-          nextEl: '.swiper-button-next-custom', // Class of your next button
+          prevEl: '.swiper-button-prev-custom',
+          nextEl: '.swiper-button-next-custom',
         }}
-        // No need for onBeforeInit or useEffect with this approach
+
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -110,7 +101,6 @@ const AgricultureProduct = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* Custom Navigation Arrows - Now with the classes Swiper will look for */}
       <div
         className="swiper-button-prev-custom absolute top-[58%] sm:left-4 left-5 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg cursor-pointer z-10
                    hover:bg-gray-100 transition-colors duration-300 transform -translate-x-1/2 sm:translate-x-0
@@ -129,4 +119,4 @@ const AgricultureProduct = () => {
   );
 };
 
-export default AgricultureProduct;
+export default LandscapeProducts;

@@ -1,5 +1,6 @@
 import AgricultureProduct from "../AgricultureProduct/AgricultureProduct";
 import Banner from "../Banner/Banner";
+import LandscapeProducts from "../LandscapeProducts/LandscapeProducts";
 import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
@@ -13,6 +14,9 @@ const Home = () => {
             </section>
             <section>
                 <AgricultureProduct/>
+            </section>
+            <section>
+                <LandscapeProducts/>
             </section>
         </div>
     );
